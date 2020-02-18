@@ -1,0 +1,401 @@
+/*--------------------------------[Custom Style CSS File]--------------------------------------
+
+    Project     : iShow One Page Portfolio
+    Version     : 1.0
+    Author      : AvilmaStudio
+    Primary Use : Portfolio
+
+-------------------------------------------------------------------------------------------*/
+
+
+/*--------------------------------[CSS File Content]----------------------------------------
+
+    => Font Import
+    => General Rules
+    => Body
+    => Classes
+    => Page Loader
+    => Scroll Top Button
+    => Navbar
+    => Header  
+    => Services
+    => Portfolio
+    => Clients
+    => About
+    => Contact
+
+-------------------------------------------------------------------------------------------*/
+
+
+/*------[start import fonts]------*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
+/*------[end import fonts]------*/
+
+
+/*------[start general rules]------*/
+
+/*== start buttons default outline remove ==*/
+button:focus {
+    outline: 0;
+}
+/*== end buttons default outline remove ==*/
+
+/*== start buttons hover effect ==*/
+button:hover {
+    background-color: #cd1d67;
+}
+/*== end buttons hover effect ==*/
+
+/*------[end general rules]------*/
+
+/*------[start body]------*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+}
+/*------[end body]------*/
+
+
+/*------[start classes]------*/
+
+/*== start section heading class ==*/
+.section-heading {
+    text-align: center;
+    padding-bottom: 40px;
+}
+/*== end section heading class ==*/
+
+
+/*== start colored class ==*/
+.colored {
+    color: #EA1D75;
+    font-weight: bold;
+}
+/*== end colored class ==*/
+
+
+/*== start heading class ==*/
+.heading {
+    color: #000;
+    font-weight: bold;
+    font-size: 32px;
+}
+/*== end heading class ==*/
+
+
+/*== start padding class ==*/
+.pad {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+/*== end padding class ==*/
+
+
+/*== start bar class ==*/
+.bar {
+    color: #FFF;
+    padding: 5px 0;
+    background-color: #EA1D75;
+}
+/*== end bar class ==*/
+
+
+/*== start info class ==*/
+.info {
+    margin-bottom: 30px;
+    position: relative;
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    overflow: hidden;
+    text-align: center;
+    height: inherit;
+}
+/*== end info class ==*/
+
+
+/*== start button class ==*/
+.button {
+    color: #FFF;
+    background-color: #EA1D75;
+    padding: 10px;
+    border-style: none;
+    font-size: 16px;
+    border-radius: 15px 3px 15px 3px;
+    -webkit-transition:  all .2s ease;
+    -moz-transition:  all .2s ease;
+    -ms-transition:  all .2s ease;
+    -o-transition:  all .2s ease;
+    transition:  all .2s ease;
+}
+/*== end button class ==*/
+
+
+/*== start lead class ==*/
+.lead {
+    color: #777;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/*== end lead class ==*/
+
+/*------[end classes]------*/
+
+
+/*------[start page loader]------*/
+.loader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: #FFF;
+}
+
+.loader .loading-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    background: url('../images/loader.gif') no-repeat center center;
+}
+/*------[end page loader]------*/
+
+
+/*------[start page scroll top button]------*/
+.scroll-top {
+    display: none;
+    width: 45px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 999;
+    border: 1px solid #FFF;
+}
+/*------[end page scroll top button]------*/
+
+
+/*------[start navbar]------*/
+.navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar-default {
+    background-color: #FFF;
+    -webkit-transition:  all .5s ease;
+    -moz-transition:  all .5s ease;
+    -ms-transition:  all .5s ease;
+    -o-transition:  all .5s ease;
+    transition:  all .5s ease;
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #EA1D75;
+}
+
+.navbar-transparent {
+    background-color: transparent;
+    border-bottom: none;
+}
+
+.navbar-transparent .navbar-toggle .icon-bar {
+    background-color: #FFFFFF;
+}
+
+.navbar-transparent .navbar-nav>li>a {
+    color: #FFFFFF;
+}
+/*------[end navbar]------*/
+
+/*------[start header section]------*/
+#header {
+    color: #FFF;
+    height: 100vh;
+    background: url('../images/main_bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#header .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /*display: none;*/
+    background-color: rgba(0,0,0,0.5);
+}
+
+#header .container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#header h1 {
+    font-size: 42px;
+    font-weight: bold
+}
+
+#header h2 {
+    font-size: 16px;
+    margin-bottom: 25px
+}
+/*------[end header section]------*/
+
+/*------[start services section]------*/
+#services h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4a4a4a
+}
+/*------[end services section]------*/
+
+/*------[start portfolio section]------*/
+#portfolio {
+    background-color: #f1f1f1;
+    transform: skewY(-5deg);
+}
+
+#portfolio .container {
+    transform: skewY(5deg);
+}
+
+#portfolio .info {
+    background-color: #FFFFFF;
+}
+
+#portfolio img {
+    margin-bottom: 20px;
+    max-width: 100%;
+    max-height: 100%
+}
+
+#portfolio h3 {
+    font-weight: bold;
+    background-color: #EA1D75;
+    color: #FFF;
+    position: absolute;
+    top: 0;
+    left: -40%;
+    width: 100%;
+    transform: rotate(-45deg)
+}
+
+#portfolio .button {
+    width: 100%;
+    border-radius: 0
+}
+/*------[end portfolio section]------*/
+
+/*------[start clients section]------*/
+#clients {
+    transform: skewY(-5deg);
+}
+
+#clients .container {
+    transform: skewY(5deg);
+}
+
+#clients img {
+    max-width: 100%;
+    max-height: 100%
+}
+
+#clients h3 {
+    font-weight: bold;
+    font-size: 20px
+}
+
+#clients .bar a {
+    color: #FFF
+}
+/*------[end client section]------*/
+
+/*------[start about section]------*/
+#about {
+    background-color: #f1f1f1;
+    transform: skewY(-5deg);
+}
+
+#about .container {
+    transform: skewY(5deg);
+}
+
+#about .info {
+    padding-top: 25px;
+    background-color: #FFFFFF;
+}
+
+#about img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%
+}
+
+#about h3 {
+    font-weight: bold;
+    font-size: 28px
+}
+
+#about h4 {
+    color: #999;
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 25px
+}
+
+#about .button {
+    width: 100%;
+    border-radius: 0
+}
+/*------[end about section]------*/
+
+/*------[start contact section]------*/
+#contact {
+    padding-bottom: 40px;
+}
+
+#contact .name,
+#contact .mail {
+    height: 40px;
+}
+
+#contact .message {
+    min-height: 200px;
+    resize: vertical;
+}
+
+#contact .name,
+#contact .mail,
+#contact .message {
+    margin-bottom: 15px;
+    border-radius: 15px 3px 15px 3px;
+}
+
+#contact .social-links {
+    margin: 25px 0;
+    font-size: 22px;
+}
+
+#contact .social-links i {
+    -webkit-transition:  all .2s ease;
+    -moz-transition:  all .2s ease;
+    -ms-transition:  all .2s ease;
+    -o-transition:  all .2s ease;
+    transition:  all .2s ease;
+}
+
+#contact .social-links i:hover {
+    color: #cd1d67;
+}
+/*------[end contact section]------*/
